@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#5b5bd6" />
+
+    <title>Colour Palette Generator — harmonies from one colour</title>
+    <meta
+      name="description"
+      content="Pick a colour and get a five-colour palette: analogous, complementary, triadic, tetradic, monochrome or tints and shades. Click any swatch to copy its hex, and share the whole palette by link. Runs in your browser, no sign-up."
+    />
+    <link rel="canonical" href="https://color-palette-generator.correia95.workers.dev/" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Colour Palette Generator" />
+    <meta property="og:description" content="Pick a colour, choose a harmony, get a five-colour palette. Copy hex codes, share by link. Free, no sign-up." />
+    <meta property="og:url" content="https://color-palette-generator.correia95.workers.dev/" />
+    <meta property="og:image" content="https://color-palette-generator.correia95.workers.dev/og.svg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Colour Palette Generator" />
+    <meta name="twitter:description" content="Pick a colour, choose a harmony, get a five-colour palette. Copy hex codes, share by link." />
+    <meta name="twitter:image" content="https://color-palette-generator.correia95.workers.dev/og.svg" />
+
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Colour Palette Generator",
+        "url": "https://color-palette-generator.correia95.workers.dev/",
+        "applicationCategory": "DesignApplication",
+        "operatingSystem": "Any",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+        "description": "Generate a five-colour palette from one colour using standard harmonies, with copyable hex codes and a shareable link, entirely in the browser."
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is a complementary colour scheme?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Complementary colours sit opposite each other on the colour wheel, giving the strongest contrast. Use one as the main colour and the other sparingly as an accent."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is an analogous colour scheme?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Analogous colours are next to each other on the wheel, so they blend smoothly and feel calm and unified. They work well for backgrounds and gentle interfaces."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I copy a colour from the palette?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Click a swatch to copy its hex code, or use the Copy all button to copy every hex in the palette at once. The palette is also stored in the page link so you can bookmark or share it."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does the palette meet accessibility contrast rules?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The swatch labels pick black or white for readability, but the harmonies themselves are not guaranteed to pass WCAG contrast for text. Check specific foreground and background pairs with a contrast checker."
+            }
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <noscript>
+      <p style="text-align: center; padding: 20px">
+        This colour palette generator needs JavaScript. It builds a five-colour palette from one
+        colour using analogous, complementary, triadic, tetradic, monochrome or tint-and-shade
+        harmonies.
+      </p>
+    </noscript>
+  </body>
+</html>

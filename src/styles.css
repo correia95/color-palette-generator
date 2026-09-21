@@ -73,3 +73,9 @@ header h1 { font-size: clamp(1.5rem, 4.5vw, 2rem); margin: 0 0 6px; letter-spaci
   .swatch .code { font-size: 0.62rem; }
   .swatch .act { display: none; }
 }
+
+/* a11y-contrast-fixes (auto, WCAG AA 4.5:1) */
+@media (prefers-color-scheme: dark) {
+  .schemes button.on { color: #0b0b0f; }
+  .copyall { color: #0b0b0f; }
+}
